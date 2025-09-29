@@ -1,4 +1,4 @@
-# WristFX_0730: Pediatric Wrist & Elbow Fracture AI Pipeline
+# Pediatric Wrist & Elbow Fracture AI Pipeline
 
 소아 손목/팔꿈치 방사선 영상에서 **골절 및 fat pad sign 검출**을 지원하는 AI 파이프라인.  
 YOLOv9 기반 **Detection**, Swin Transformer  / ConvNeXt_v2 기반 **Classification**, 그리고 **Ensemble** 전략으로 성능을 향상. Grad-CAM 기반 시각화 지원.
