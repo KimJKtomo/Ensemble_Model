@@ -1,0 +1,5 @@
+path: /mnt/data/KimJG/SwinT/mediaiOA_swinT_cls-main_original/20250623_Single/WristFX_0730/detection/dataset
+train: images/train
+val: images/val
+nc: 1
+names: ['fracture']

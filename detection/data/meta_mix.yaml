@@ -1,0 +1,12 @@
+# /mnt/data/KimJG/Yolo_test/YOLOv9-Fracture-Detection/GRAZPEDWRI-DX/data/meta_mix.yaml
+
+path: '/mnt/data/KimJG/Yolo_test/YOLOv9-Fracture-Detection/GRAZPEDWRI-DX/data'
+train: 'images/train_mix'
+val: 'images/valid_mix'
+test: 'images/test_mix'
+
+
+
+nc: 1
+names:
+  0: fracture

@@ -1,0 +1,76 @@
+# -------------------------
+# Python cache / build
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# -------------------------
+# IDE / OS
+# -------------------------
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# -------------------------
+# Jupyter
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# Data (이미지, 라벨, 환자 데이터 등 무조건 제외)
+# -------------------------
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tif
+*.tiff
+*.dcm
+*.nii
+*.npy
+*.npz
+*.csv
+*.xlsx
+*.txt
+*.xml
+*.json
+
+# -------------------------
+# Training outputs
+# -------------------------
+runs/
+outputs/
+logs/
+*.log
+events.out.tfevents*
+
+# -------------------------
+# Model weights / checkpoints
+# -------------------------
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# -------------------------
+# Project-specific large dirs
+# -------------------------
+Cropping/
+Ensemble/
+Labeling/
+PediatricFracture_Wrist/
+detection/runs/
+classification/runs/
+
+# -------------------------
+# Force-include essential files
+# -------------------------
+!README.md
+!setup_pediatric_wrist_oneclick.py
+

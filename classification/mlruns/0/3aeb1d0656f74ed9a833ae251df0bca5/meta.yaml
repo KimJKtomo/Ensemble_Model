@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/data/KimJG/SwinT/mediaiOA_swinT_cls-main_original/20250623_Single/WristFX_0730/classification/mlruns/0/3aeb1d0656f74ed9a833ae251df0bca5/artifacts
+end_time: 1758119784515
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3aeb1d0656f74ed9a833ae251df0bca5
+run_name: ConvNeXtV2_LateFusion_AP_Age1
+run_uuid: 3aeb1d0656f74ed9a833ae251df0bca5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758100871507
+status: 3
+tags: []
+user_id: kimgk3793
