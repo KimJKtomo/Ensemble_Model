@@ -1,7 +1,7 @@
 # WristFX_0730: Pediatric Wrist & Elbow Fracture AI Pipeline
 
 소아 손목/팔꿈치 방사선 영상에서 **골절 및 fat pad sign 검출**을 지원하는 AI 파이프라인.  
-YOLOv9 기반 **Detection**, Swin Transformer 기반 **Classification**, 그리고 **Ensemble** 전략으로 성능을 향상. Grad-CAM 기반 시각화 지원.
+YOLOv9 기반 **Detection**, Swin Transformer  / ConvNeXt_v2 기반 **Classification**, 그리고 **Ensemble** 전략으로 성능을 향상. Grad-CAM 기반 시각화 지원.
 
 ---
 
@@ -92,14 +92,8 @@ python Ensemble/Final_inference_APLAT_ensemble_from_uploaded_paths_0820.py
 
 ---
 
-## 🌐 GitHub Pages
-- 원한다면 `Ensemble/Result/` 이미지를 활용해 시각적 포트폴리오로 사용 가능
-- 별도 `docs/` 폴더 불필요, 루트 README만으로도 충분히 포트폴리오 사용 가능
-
----
-
 ## 🤝 Acknowledgements
 - **Seoul Asan Medical Center** Pediatric Emergency/Trauma Team  
 - **MURA**, **GRAZPEDWRI-DX** dataset  
-- **Ultralytics YOLO**, **timm (Swin Transformer)**  
+- **Ultralytics YOLO**, **timm (Swin Transformer)**, ** ConvNeXt_v2**
 - **MLflow**, **PyTorch**, **OpenMMLab**
