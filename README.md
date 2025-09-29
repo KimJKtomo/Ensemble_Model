@@ -95,5 +95,5 @@ python Ensemble/Final_inference_APLAT_ensemble_from_uploaded_paths_0820.py
 ## 🤝 Acknowledgements
 - **Seoul Asan Medical Center** Pediatric Emergency/Trauma Team  
 - **MURA**, **GRAZPEDWRI-DX** dataset  
-- **Ultralytics YOLO**, **timm (Swin Transformer)**, ** ConvNeXt_v2**
+- **Ultralytics YOLO**, **timm (Swin Transformer)**, **ConvNeXt_v2**
 - **MLflow**, **PyTorch**, **OpenMMLab**
