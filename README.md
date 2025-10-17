@@ -1,16 +1,16 @@
 # Pediatric Wrist & Elbow Fracture AI Pipeline
 
-소아 손목/팔꿈치 방사선 영상에서 **골절 및 fat pad sign 검출**을 지원하는 AI 파이프라인.  
+소아 손목/팔꿈치 X-ray 영상에서 **골절 및 fat pad sign 검출**을 지원하는 AI 파이프라인.  
 YOLOv9 기반 **Detection**, Swin Transformer  / ConvNeXt_v2 기반 **Classification**, 그리고 **Ensemble** 전략으로 성능을 향상. Grad-CAM 기반 시각화 지원.
 
 ---
 
 ## 📦 Features
 - **Detection**: YOLOv9 (Fracture, Fat pad)
-- **Classification**: Swin Transformer (ROI별 binary classification)
+- **Classification**: ConvNeXt_v2 , Swin Transformer (ROI별 binary classification)
 - **Ensemble**: Cls × 0.6 + Det × 0.4
-- **Explainability**: Grad-CAM, CAM overlays
-- **MLOps**: MLflow 기반 로그 관리, reproducibility
+- **Explainability**: Grad-CAM, BBOX result overlays
+- **MLOps**: MLflow 기반 로그 관리, reproducibility , RAY 하이퍼파라미터 활용
 
 ---
 
