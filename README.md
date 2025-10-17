@@ -16,7 +16,7 @@ YOLOv9 기반 **Detection**, Swin Transformer  / ConvNeXt_v2 기반 **Classifica
 
 ## 📂 Project Structure
 ```
-WristFX_0730/
+Ensemble_Model/
 ├─ classification/    # SwinT 학습 및 테스트
 ├─ detection/         # YOLOv9 학습 및 테스트
 ├─ Ensemble/          # Ensemble inference (AP/LAT, fracture + fat pad)
@@ -34,8 +34,8 @@ WristFX_0730/
 
 ## ⚙️ Installation
 ```bash
-conda create -n wristfx python=3.10 -y
-conda activate wristfx
+conda create -n Ensemble_Model python=3.10 -y
+conda activate Ensemble_Model
 pip install -r requirements.txt
 ```
 
@@ -73,14 +73,18 @@ python Ensemble/Final_inference_APLAT_ensemble_from_uploaded_paths_0820.py
 |---|---|---|---|---:|---:|---|
 | 2025-09-02 | FX | AP  | 311 (217 / 94) | **0.9333** | **0.9789** | Miss 6, Over 2 |
 | 2025-09-02 | FX | LAT | 320 (219 / 101) | **0.9149** | **0.9783** | Miss 8, Over 3 |
-| 2025-09-04 | FX+Fat Pad | AP  | 311 (217 / 94) | **0.9255** | — | Miss 7, Over 16 |
+| 2025-09-04 | FX+Fat Pad | AP  | 311 (217 / 94)  | **0.9255** | — | Miss 7, Over 16 |
 | 2025-09-04 | FX+Fat Pad | LAT | 320 (219 / 101) | **0.9307** | — | Miss 8, Over 3 |
+| 2025-10-14 | FX+Fat Pad | AP  | 311 (217 / 94)  | **0.9451** | **0.9680** | Miss 5, Over 56 , Best Sensitivity |
+| 2025-10-14 | FX+Fat Pad | LAT | 320 (219 / 101) | **0.9216** | **0.9510** | Miss 7, Over 56 , Best Sensitivity |
+| 2025-10-16 | FX+Fat Pad | AP  | 311 (217 / 94)  | **0.9341** | **0.9711** | Miss 5, Over 26 , Best F1 |
+| 2025-10-16 | FX+Fat Pad | LAT | 320 (219 / 101) | **0.9216** | **0.9610** | Miss 8, Over 10 , Best F1 |
 
 ---
 
 ## 🖼️ Example Visualizations
 
-원본 X-ray vs Grad-CAM Overlay (Detection + Classification Ensemble).  
+원본 X-ray vs Grad-CAM + BBOX Overlay (Detection + Classification Ensemble).  
 **모든 이미지는 비식별화된 샘플 데이터.**
 
 | Original | Grad-CAM |
@@ -93,6 +97,7 @@ python Ensemble/Final_inference_APLAT_ensemble_from_uploaded_paths_0820.py
 ---
 
 ## 🤝 Acknowledgements
+- **Crescom AI ** 연구원 김진규
 - **Seoul Asan Medical Center** Pediatric Emergency/Trauma Team  
 - **MURA**, **GRAZPEDWRI-DX** dataset  
 - **Ultralytics YOLO**, **timm (Swin Transformer)**, **ConvNeXt_v2**
