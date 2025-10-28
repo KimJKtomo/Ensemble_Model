@@ -66,19 +66,25 @@ python Ensemble/Final_inference_APLAT_ensemble_from_uploaded_paths_0820.py
 
 ## 📊 Results (Ensemble)
 
-- Ensemble 계산식: `Final = Cls*0.6 + Det*0.4`
-- Threshold = `0.25`
+- **Ensemble 계산식:** `Final = Cls*0.6 + Det*0.4`  
+- **Threshold:**  
+  - ~10/16 → Fixed threshold = `0.25`  
+  - 10/28 이후 → **Youden threshold (최적 감도·특이도 기준)**  
+- **95% CI:** DeLong method 기반 (신뢰구간 95%)
 
-| Date | Task | View | Samples (pos / neg) | Sensitivity | AUROC | Notes |
+| Date | Task | View | Samples (pos / neg) | Sensitivity (95% CI) | AUROC (95% CI) | Notes |
 |---|---|---|---|---:|---:|---|
-| 2025-09-02 | FX | AP  | 311 (217 / 94) | **0.9333** | **0.9789** | Miss 6, Over 2 |
-| 2025-09-02 | FX | LAT | 320 (219 / 101) | **0.9149** | **0.9783** | Miss 8, Over 3 |
-| 2025-09-04 | FX+Fat Pad | AP  | 311 (217 / 94)  | **0.9255** | — | Miss 7, Over 16 |
-| 2025-09-04 | FX+Fat Pad | LAT | 320 (219 / 101) | **0.9307** | — | Miss 8, Over 3 |
-| 2025-10-14 | FX+Fat Pad | AP  | 311 (217 / 94)  | **0.9451** | **0.9680** | Miss 5, Over 56 , Best Sensitivity |
-| 2025-10-14 | FX+Fat Pad | LAT | 320 (219 / 101) | **0.9216** | **0.9510** | Miss 7, Over 56 , Best Sensitivity |
-| 2025-10-16 | FX+Fat Pad | AP  | 311 (217 / 94)  | **0.9341** | **0.9711** | Miss 5, Over 26 , Best F1 |
-| 2025-10-16 | FX+Fat Pad | LAT | 320 (219 / 101) | **0.9216** | **0.9610** | Miss 8, Over 10 , Best F1 |
+| 2025-09-02 | FX | AP  | 311 (217 / 94) | **0.9333 (0.90–0.96)** | **0.9789 (0.96–0.99)** | Miss 6, Over 2 |
+| 2025-09-02 | FX | LAT | 320 (219 / 101) | **0.9149 (0.88–0.95)** | **0.9783 (0.96–0.99)** | Miss 8, Over 3 |
+| 2025-09-04 | FX+Fat Pad | AP  | 311 (217 / 94) | **0.9255 (0.89–0.95)** | — | Miss 7, Over 16 |
+| 2025-09-04 | FX+Fat Pad | LAT | 320 (219 / 101) | **0.9307 (0.90–0.96)** | — | Miss 8, Over 3 |
+| 2025-10-14 | FX+Fat Pad | AP  | 311 (217 / 94) | **0.9451 (0.91–0.97)** | **0.9680 (0.94–0.99)** | Miss 5, Over 56 , Best Sensitivity |
+| 2025-10-14 | FX+Fat Pad | LAT | 320 (219 / 101) | **0.9216 (0.89–0.95)** | **0.9510 (0.93–0.97)** | Miss 7, Over 56 , Best Sensitivity |
+| 2025-10-16 | FX+Fat Pad | AP  | 311 (217 / 94) | **0.9341 (0.90–0.96)** | **0.9711 (0.95–0.99)** | Miss 5, Over 26 , Best F1 |
+| 2025-10-16 | FX+Fat Pad | LAT | 320 (219 / 101) | **0.9216 (0.89–0.95)** | **0.9610 (0.94–0.98)** | Miss 8, Over 10 , Best F1 |
+| 2025-10-28 | FX+Fat Pad | AP  | 311 (217 / 94) | **0.938 (0.90–0.97)** | **0.9629 (0.94–0.98)** | Miss 6, Over 15 , Youden threshold |
+| 2025-10-28 | FX+Fat Pad | LAT | 320 (219 / 101) | **0.931 (0.89–0.96)** | **0.9628 (0.94–0.98)** | Miss 8, Over 17 , Youden threshold |
+| 2025-10-28 | FX+Fat Pad (Patient Ensemble) | AP + LAT | 304 (patients) | **0.917 (0.87–0.95)** | **0.9469 (0.92–0.97)** | OR logic , Youden threshold |
 
 ---
 
