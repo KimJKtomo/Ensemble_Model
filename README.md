@@ -82,9 +82,9 @@ python Ensemble/Final_inference_APLAT_ensemble_from_uploaded_paths_0820.py
 | 2025-10-14 | FX+Fat Pad | LAT | 320 (219 / 101) | **0.9216 (0.89–0.95)** | **0.9510 (0.93–0.97)** | Miss 7, Over 56 , Best Sensitivity |
 | 2025-10-16 | FX+Fat Pad | AP  | 311 (217 / 94) | **0.9341 (0.90–0.96)** | **0.9711 (0.95–0.99)** | Miss 5, Over 26 , Best F1 |
 | 2025-10-16 | FX+Fat Pad | LAT | 320 (219 / 101) | **0.9216 (0.89–0.95)** | **0.9610 (0.94–0.98)** | Miss 8, Over 10 , Best F1 |
-| 2025-10-28 | FX+Fat Pad | AP  | 311 (217 / 94) | **0.938 (0.90–0.97)** | **0.9629 (0.94–0.98)** | Miss 6, Over 15 , Youden threshold |
-| 2025-10-28 | FX+Fat Pad | LAT | 320 (219 / 101) | **0.931 (0.89–0.96)** | **0.9628 (0.94–0.98)** | Miss 8, Over 17 , Youden threshold |
-| 2025-10-28 | FX+Fat Pad (Patient Ensemble) | AP + LAT | 304 (patients) | **0.917 (0.87–0.95)** | **0.9469 (0.92–0.97)** | OR logic , Youden threshold |
+| 2025-10-28 | FX+Fat Pad | AP  | **297 (91 / 206)** | **0.9011 (0.85–0.94)** | **0.9629 (0.94–0.98)** | Miss 9, Over 13 , Youden threshold |
+| 2025-10-28 | FX+Fat Pad | LAT | **311 (102 / 209)** | **0.8922 (0.84–0.93)** | **0.9628 (0.94–0.98)** | Miss 11, Over 15 , Youden threshold |
+| 2025-10-28 | FX+Fat Pad (Patient Ensemble) | AP + LAT | **608 (193 / 415)** | **0.8808 (0.84–0.92)** | **0.9469 (0.92–0.97)** | OR logic , Youden threshold |
 
 ---
 
