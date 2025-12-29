@@ -13,11 +13,11 @@ from sklearn.metrics import precision_score, recall_score
 
 # ✅ 경로 설정
 BASE_DIR = Path(__file__).resolve().parent
-WEIGHT_PATH = BASE_DIR / "runs" / "train" / "yolov9-c_0730" / "weights" / "best.pt"
+WEIGHT_PATH = BASE_DIR / "runs" / "train_1020" / "yolov9-e" / "weights" / "best.pt"
 IMG_DIR = BASE_DIR / "dataset" / "images" / "val"
 LABEL_DIR = BASE_DIR / "dataset" / "labels" / "val"
 SAVE_DIR = BASE_DIR / "inference_results"
-YOLO_CFG = BASE_DIR / "models" / "detect" / "yolov9-c.yaml"  # ← 수정됨
+YOLO_CFG = BASE_DIR / "models" / "detect" / "yolov9-e.yaml"  # ← 수정됨
 
 SAVE_DIR.mkdir(exist_ok=True, parents=True)
 
