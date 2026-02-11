@@ -7,8 +7,8 @@ YOLOv9 기반 **Detection**, Swin Transformer  / ConvNeXt_v2 기반 **Classifica
 
 ## 📦 Features
 - **Detection**: YOLOv9 (Fracture, Fat pad)
-- **Classification**: ConvNeXt_v2 , Swin Transformer (ROI별 binary classification)
-- **Ensemble**: Cls × 0.6 + Det × 0.4
+- **Classification**: ConvNeXt_v2 ( Fracture classification)
+- **Ensemble**: Cls × Alpha + Det × (1-Alpha) , Alpha = logistic adaptive
 - **Explainability**: Grad-CAM, BBOX result overlays
 - **MLOps**: MLflow 기반 로그 관리, reproducibility , RAY 하이퍼파라미터 활용
 
@@ -85,6 +85,7 @@ python Ensemble/Final_inference_APLAT_ensemble_from_uploaded_paths_0820.py
 | 2025-10-28 | FX+Fat Pad | AP  | **297 (91 / 206)** | **0.9011 (0.85–0.94)** | **0.9629 (0.94–0.98)** | Miss 9, Over 13 , Youden threshold |
 | 2025-10-28 | FX+Fat Pad | LAT | **311 (102 / 209)** | **0.8922 (0.84–0.93)** | **0.9628 (0.94–0.98)** | Miss 11, Over 15 , Youden threshold |
 | 2025-10-28 | FX+Fat Pad (Patient Ensemble) | AP + LAT | **608 (193 / 415)** | **0.8808 (0.84–0.92)** | **0.9469 (0.92–0.97)** | OR logic , Youden threshold |
+| 2026-10-28 | Wrist FX (Patient) | AP + LAT | **517 (155 / 362)** | **0.974 (0.936–0.991)** | **0.993 (0.986–0.999)** | OR logic , Youden threshold |
 
 ---
 
