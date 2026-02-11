@@ -101,6 +101,12 @@ python Ensemble/Final_inference_APLAT_ensemble_from_uploaded_paths_0820.py
 | ![](./Ensemble/Result/02025808HBD_CR14258.1.3.jpg) | ![](./Ensemble/Result/02025808HBD_CR14258.1.3_CAM.jpg) |
 | ![](./Ensemble/Result/02030557HBD_CR17256.1.4.jpg) | ![](./Ensemble/Result/02030557HBD_CR17256.1.4_CAM.jpg) |
 
+| Wrist Pair Result |
+|---|
+| ![](./Ensemble/Result/PAT_CR34427__APLAT__MOSAIC.png) | 
+| ![](./Ensemble/Result/PAT_CR36884__APLAT__MOSAIC.png) | 
+
+
 ---
 
 ## 🤝 Acknowledgements
